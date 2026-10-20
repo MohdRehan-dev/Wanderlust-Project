@@ -1,60 +1,67 @@
-# Wanderlust — Destination Guide & Listing Platform
+# Wanderlust — Vacation Rental Listing Application
 
-A full-stack web application for exploring, creating, and managing destination listings, built using JavaScript, Node.js, Express.js, MongoDB, and EJS.
+Wanderlust is a full-stack vacation rental listing web application built using Node.js, Express.js, MongoDB, and EJS. Users can explore properties, create and manage listings, upload images, and share reviews.
 
-## Live Demo
-
-[View Live Application](https://delta-project-68j5.onrender.com)
+**Live Demo:** https://delta-project-68j5.onrender.com
 
 ## Features
 
-- Create, view, edit, and delete destination listings
 - User registration, login, and logout
-- Authentication and authorization
-- Reviews and ratings for listings
-- Server-side rendering using EJS
-- MongoDB database integration
-- MVC-based project structure
-- Responsive user interface
+- Create, view, edit, and delete property listings
+- Listing ownership and authorization
+- Image uploads using Cloudinary
+- Property reviews and ratings
+- Review author authorization
+- Interactive location maps using Mapbox
+- Server-side validation using Joi
+- Flash messages and error handling
+- MongoDB-backed sessions
 
-## Tech Stack
+## Technology Stack
 
-**Frontend:** HTML, CSS, JavaScript, EJS, Bootstrap
+**Frontend:** HTML5, CSS3, Bootstrap, EJS
 
 **Backend:** Node.js, Express.js
 
 **Database:** MongoDB, Mongoose
 
-**Authentication:** Passport.js, Express Sessions
+**Authentication:** Passport.js
 
-**Other Tools:** Git, GitHub, Render
+**Image Storage:** Cloudinary, Multer
 
-## Project Screenshots
+**Maps:** Mapbox
 
-Add screenshots of the homepage, listing details, and login page here.
+**Validation:** Joi
 
-## Getting Started
+**Sessions:** Express Session, MongoDB session store
 
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Configure the required environment variables.
-4. Set up the MongoDB database connection.
-5. Start the application using the command configured in `package.json`.
-6. Open the application in your browser.
+## Installation and Setup
 
-## What I Learned
+1. Clone the GitHub repository.
+2. Open the project folder.
+3. Install dependencies:
 
-- Building RESTful routes using Express.js
-- Implementing CRUD operations
-- Working with MongoDB and Mongoose
-- User authentication and authorization
-- Handling middleware and errors
-- Organizing a full-stack application using MVC architecture
+   `npm install`
 
-## Author
+4. Create a `.env` file and configure the required environment variables:
 
-**Sayed Mohd Rehan**
+   - `ATLASDB_URL`
+   - `SECRET`
+   - `MAP_TOKEN`
+   - Cloudinary credentials (use the exact variable names referenced in the project)
 
-2026 Electronics & Computer Science Engineering Graduate
+5. Start the application:
 
-[GitHub Profile](https://github.com/MohdRehan-dev)
+   `node app.js`
+
+6. Open `http://localhost:8080` in your browser.
+
+Never commit your `.env` file or expose API credentials.
+
+## Project Architecture
+
+The application follows an MVC-style structure, separating models, controllers, routes, views, and middleware.
+
+## Acknowledgement
+
+This project was developed as part of the Apna College Full-Stack Web Development course with tutorial guidance. It was used to gain practical experience with backend development, database integration, authentication, authorization, file uploads, and deployment.
